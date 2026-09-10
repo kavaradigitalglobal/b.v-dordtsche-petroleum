@@ -50,7 +50,7 @@ function ServiceDetail() {
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{service.summary}</p>
             <dl className="mt-8 divide-y divide-border">
               {service.specs.map((spec, i) => {
-                const Icon = specIcons[i % specIcons.length];
+                const Icon = specIcons[i % specIcons.length]!;
                 return (
                   <div key={spec.label} className="flex items-center justify-between gap-4 py-3">
                     <dt className="flex items-center gap-2 font-display text-xs font-semibold uppercase tracking-[0.12em]">
