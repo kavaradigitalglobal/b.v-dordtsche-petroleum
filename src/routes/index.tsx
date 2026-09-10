@@ -148,7 +148,9 @@ function Home() {
             </p>
             <div className="mt-8 flex items-start gap-6">
               <div>
-                <p className="font-display text-4xl font-bold text-primary">7</p>
+                <p className="font-display text-4xl font-bold text-primary">
+                  <AnimatedStat value={7} />
+                </p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
                   Refined grades
                 </p>
@@ -317,7 +319,7 @@ function Home() {
           {stats.map((s) => (
             <div key={s.label} className="text-center lg:border-r lg:border-border lg:last:border-0">
               <p className="font-display text-4xl font-bold">
-                <AnimatedStat value={s.value} suffix="+" className="[&>span]:contents" />
+                <AnimatedStat value={s.value} suffix="+" suffixClassName="text-primary" />
               </p>
               <p className="mt-1 text-sm text-muted-foreground">{s.label}</p>
             </div>

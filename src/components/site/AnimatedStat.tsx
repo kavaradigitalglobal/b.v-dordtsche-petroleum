@@ -5,6 +5,7 @@ type AnimatedStatProps = {
   suffix?: string;
   duration?: number;
   className?: string;
+  suffixClassName?: string;
 };
 
 export function AnimatedStat({
@@ -12,6 +13,7 @@ export function AnimatedStat({
   suffix = "",
   duration = 1200,
   className,
+  suffixClassName,
 }: AnimatedStatProps) {
   const target = typeof value === "number" ? value : Number.parseFloat(value);
   const safeTarget = Number.isFinite(target) ? target : 0;
@@ -61,7 +63,7 @@ export function AnimatedStat({
     <span ref={elementRef} className={className} aria-label={`${safeTarget}${suffix}`}>
       <span aria-hidden="true">
         {displayValue}
-        {suffix}
+        {suffix ? <span className={suffixClassName}>{suffix}</span> : null}
       </span>
     </span>
   );
