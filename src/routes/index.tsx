@@ -4,6 +4,7 @@ import heroRig from "@/assets/hero-rig.jpg";
 import refineryTower from "@/assets/refinery-tower.jpg";
 import refineryWide from "@/assets/refinery-wide.jpg";
 import tankers from "@/assets/tankers.jpg";
+import { AnimatedProgress, AnimatedStat } from "@/components/site/AnimatedStat";
 import { company, services, stats } from "@/lib/site-data";
 
 export const Route = createFileRoute("/")({
@@ -246,10 +247,17 @@ function Home() {
                         <span className="font-display text-xs font-semibold uppercase tracking-[0.14em]">
                           {item.label}
                         </span>
-                        <span className="font-display text-xs font-bold">{item.value}%</span>
+                        <AnimatedStat
+                          value={item.value}
+                          suffix="%"
+                          className="font-display text-xs font-bold"
+                        />
                       </div>
                       <div className="mt-2 h-1.5 w-full bg-muted">
-                        <div className="h-full bg-primary" style={{ width: `${item.value}%` }} />
+                        <AnimatedProgress
+                          value={item.value}
+                          className="h-full bg-primary transition-[width] duration-1000 ease-out"
+                        />
                       </div>
                     </div>
                   ))}
@@ -309,8 +317,7 @@ function Home() {
           {stats.map((s) => (
             <div key={s.label} className="text-center lg:border-r lg:border-border lg:last:border-0">
               <p className="font-display text-4xl font-bold">
-                {s.value}
-                <span className="text-primary">+</span>
+                <AnimatedStat value={s.value} suffix="+" className="[&>span]:contents" />
               </p>
               <p className="mt-1 text-sm text-muted-foreground">{s.label}</p>
             </div>
