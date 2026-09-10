@@ -8,6 +8,10 @@ export const company = {
   tagline: "Refined Petroleum Supply & Trading",
 };
 
+/** Absolute 1200x630 social preview image (social crawlers require absolute URLs). */
+export const OG_IMAGE =
+  "https://project--3ef5d425-ed0b-4b9d-88ab-c9427439a79f.lovable.app/og-image.jpg";
+
 export type Service = {
   slug: string;
   name: string;
