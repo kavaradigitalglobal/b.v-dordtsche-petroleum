@@ -44,18 +44,18 @@ function Contact() {
         </div>
 
         <div className="mt-12 grid gap-0 md:grid-cols-3">
-          <div className="bg-surface p-8">
+          <div className="rounded-lg bg-surface p-8">
             <MapPin className="size-7 text-primary" aria-hidden />
             <h3 className="mt-5 text-lg">Our Office</h3>
             <p className="mt-2 text-sm text-muted-foreground">{company.address}</p>
           </div>
-          <div className="bg-navy p-8 text-navy-foreground">
+          <div className="rounded-lg bg-navy p-8 text-navy-foreground">
             <Building2 className="size-7 text-primary" aria-hidden />
             <h3 className="mt-5 text-lg">Registration</h3>
             <p className="mt-2 text-sm opacity-75">KvK {company.kvk}</p>
             <p className="mt-1 text-sm opacity-75">{company.name}</p>
           </div>
-          <div className="bg-primary p-8 text-primary-foreground">
+          <div className="rounded-lg bg-primary p-8 text-primary-foreground">
             <Mail className="size-7" aria-hidden />
             <h3 className="mt-5 text-lg">Our Email</h3>
             <a href={`mailto:${company.email}`} className="mt-2 block text-sm underline">
@@ -65,7 +65,7 @@ function Contact() {
         </div>
 
         <div className="mt-8 grid gap-8 lg:grid-cols-2">
-          <div className="bg-surface p-8">
+          <div className="rounded-lg bg-surface p-8">
             <h3 className="text-lg rule-accent">Trading Desk</h3>
             <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
               <li className="flex gap-3">
@@ -91,11 +91,11 @@ function Contact() {
             </div>
           </div>
 
-          <div className="border border-border p-8">
+          <div className="rounded-lg border border-border p-8">
             <p className="kicker">Let&apos;s talk</p>
             <h3 className="mt-3 text-2xl">Leave a message</h3>
             {sent ? (
-              <div className="mt-8 bg-surface p-6">
+              <div className="mt-8 rounded-lg bg-surface p-6">
                 <h4 className="text-base">Thank you</h4>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Your details are ready to send. Please email {company.email} with the same
@@ -123,7 +123,7 @@ function Contact() {
                   <select
                     name="product"
                     required
-                    className="mt-2 w-full border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
+                    className="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
                   >
                     {services.map((s) => (
                       <option key={s.slug} value={s.name}>
@@ -141,7 +141,7 @@ function Contact() {
                     rows={4}
                     required
                     placeholder="Volume, delivery basis and timing"
-                    className="mt-2 w-full border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
+                    className="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
                   />
                 </label>
                 <button type="submit" className="btn-base btn-primary w-full">
@@ -175,7 +175,7 @@ function Field({
         type={type}
         required
         placeholder={placeholder}
-        className="mt-2 w-full border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
+        className="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
       />
     </label>
   );

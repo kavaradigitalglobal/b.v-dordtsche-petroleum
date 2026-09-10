@@ -23,7 +23,7 @@ export function PageHero({
         />
       </div>
       <div className="relative z-10 mx-auto -mt-24 max-w-7xl px-5">
-        <div className="mx-auto w-full max-w-md bg-navy px-8 py-10 text-center text-navy-foreground">
+        <div className="mx-auto w-full max-w-md rounded-lg bg-navy px-8 py-10 text-center text-navy-foreground">
           <p className="flex items-center justify-center gap-2 text-xs">
             <Link to="/" className="hover:text-primary">
               Home

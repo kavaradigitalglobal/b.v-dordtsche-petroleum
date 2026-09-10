@@ -70,7 +70,7 @@ export function Header() {
                   </button>
 
                   {servicesOpen && (
-                    <div className="absolute left-0 top-full z-50 mt-1 w-64 border border-border bg-background shadow-lg">
+                    <div className="absolute left-0 top-full z-50 mt-1 w-64 overflow-hidden rounded-lg border border-border bg-background shadow-lg">
                       <Link
                         to="/services"
                         className="block border-b border-border px-4 py-2.5 font-display text-sm font-semibold uppercase tracking-[0.12em] text-foreground hover:bg-muted hover:text-primary"

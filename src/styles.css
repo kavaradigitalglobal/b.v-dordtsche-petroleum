@@ -42,7 +42,7 @@
 }
 
 :root {
-  --radius: 0rem;
+  --radius: 0.75rem;
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.22 0.06 262);
@@ -135,6 +135,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.8125rem;
+  border-radius: var(--radius-md);
   transition:
     background-color 0.2s ease,
     color 0.2s ease;

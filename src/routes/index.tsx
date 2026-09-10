@@ -97,7 +97,7 @@ function Home() {
       {/* Two overlapping cards */}
       <section className="relative z-10 mx-auto -mt-16 max-w-7xl px-5">
         <div className="grid gap-0 lg:grid-cols-[1.4fr_1fr]">
-          <div className="bg-background p-8 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.35)] sm:p-10">
+          <div className="rounded-lg bg-background p-8 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.35)] sm:p-10">
             <h2 className="text-xl rule-accent">How can we help you?</h2>
             <div className="mt-6 grid gap-x-8 gap-y-3 sm:grid-cols-2">
               {[
@@ -118,7 +118,7 @@ function Home() {
               Explore Products <ArrowRight className="size-4" aria-hidden />
             </Link>
           </div>
-          <div className="bg-navy p-8 text-navy-foreground sm:p-10">
+          <div className="rounded-lg bg-navy p-8 text-navy-foreground sm:p-10">
             <h2 className="text-xl">Request for a quote</h2>
             <p className="mt-4 text-sm opacity-75">
               Send the product, volume and destination port. Our desk responds with a soft corporate
@@ -165,7 +165,7 @@ function Home() {
             </Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="bg-surface p-7">
+            <div className="rounded-lg bg-surface p-7">
               <Droplets className="size-8 text-primary" aria-hidden />
               <h3 className="mt-5 text-lg">Product Expertise</h3>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -175,7 +175,7 @@ function Home() {
                 Learn More <ArrowRight className="size-4" aria-hidden />
               </Link>
             </div>
-            <div className="row-span-2 overflow-hidden">
+            <div className="row-span-2 overflow-hidden rounded-lg">
               <img
                 src={refineryTower}
                 alt="Refinery distillation tower"
@@ -185,7 +185,7 @@ function Home() {
                 className="size-full object-cover"
               />
             </div>
-            <div className="bg-navy p-7 text-navy-foreground">
+            <div className="rounded-lg bg-navy p-7 text-navy-foreground">
               <Factory className="size-8 text-primary" aria-hidden />
               <h3 className="mt-5 text-lg">Inspection Discipline</h3>
               <p className="mt-2 text-sm opacity-75">
@@ -223,7 +223,7 @@ function Home() {
               </p>
             </div>
             <div className="mt-10 grid gap-0 lg:grid-cols-[1fr_1.6fr]">
-              <div className="bg-navy p-8">
+              <div className="rounded-lg bg-navy p-8">
                 <h3 className="text-lg">Always ready to serve</h3>
                 <p className="mt-3 text-sm opacity-75">
                   Our desk operates on Central European hours and answers enquiries in writing.
@@ -237,7 +237,7 @@ function Home() {
                   <li>{company.email}</li>
                 </ul>
               </div>
-              <div className="bg-background p-8 text-foreground">
+              <div className="rounded-lg bg-background p-8 text-foreground">
                 <h3 className="text-lg">This is our expertise</h3>
                 <div className="mt-6 space-y-5">
                   {expertise.map((item) => (
@@ -276,7 +276,7 @@ function Home() {
                 key={s.slug}
                 to="/services/$slug"
                 params={{ slug: s.slug }}
-                className={`group p-7 transition-colors ${
+                className={`group rounded-lg p-7 transition-colors ${
                   i === 0 || i === 3
                     ? "bg-navy text-navy-foreground hover:bg-primary"
                     : i === 2
@@ -294,7 +294,7 @@ function Home() {
             ))}
             <Link
               to="/services"
-              className="flex flex-col justify-end bg-navy-deep p-7 text-navy-foreground"
+              className="flex flex-col justify-end rounded-lg bg-navy-deep p-7 text-navy-foreground"
             >
               <h3 className="text-lg">Explore all products</h3>
               <span className="btn-base btn-primary mt-5">All Products</span>
@@ -330,7 +330,7 @@ function Home() {
               height={800}
               className="w-full object-cover"
             />
-            <div className="bg-primary p-7 text-primary-foreground">
+            <div className="rounded-lg bg-primary p-7 text-primary-foreground">
               <p className="font-display text-lg font-bold uppercase leading-snug">
                 Let&apos;s talk about the cargo you need moved
               </p>
@@ -346,7 +346,7 @@ function Home() {
               {steps.map((step, i) => (
                 <div key={step.title} className="flex gap-5">
                   <span
-                    className={`flex size-12 shrink-0 items-center justify-center ${
+                    className={`flex size-12 shrink-0 items-center justify-center rounded-lg ${
                       i % 2 === 0 ? "bg-navy text-navy-foreground" : "bg-primary text-primary-foreground"
                     }`}
                   >

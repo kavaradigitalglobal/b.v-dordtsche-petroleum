@@ -76,13 +76,13 @@ function About() {
               means specification questions, documentation and scheduling are answered by one team.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="bg-surface p-6">
+              <div className="rounded-lg bg-surface p-6">
                 <h3 className="text-base">Our History</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
                   A Dutch petroleum name with roots in the earliest days of the trade.
                 </p>
               </div>
-              <div className="bg-navy p-6 text-navy-foreground">
+              <div className="rounded-lg bg-navy p-6 text-navy-foreground">
                 <h3 className="text-base">Our Standard</h3>
                 <p className="mt-2 text-sm opacity-75">
                   SGS or equivalent inspection on every cargo, without exception.
@@ -110,7 +110,7 @@ function About() {
               height={1000}
               className="h-full w-full object-cover"
             />
-            <div className="flex flex-col justify-center bg-primary p-7 text-primary-foreground">
+            <div className="flex flex-col justify-center rounded-lg bg-primary p-7 text-primary-foreground">
               <p className="font-display text-4xl font-bold">98%</p>
               <p className="mt-2 text-sm">
                 of shipments cleared inspection on the first sampling round.
@@ -136,7 +136,7 @@ function About() {
 
       <section className="mx-auto max-w-7xl px-5 py-20">
         <div className="grid gap-12 lg:grid-cols-2">
-          <div className="border-l-[10px] border-primary pl-6">
+          <div className="overflow-hidden rounded-lg border-l-[10px] border-primary pl-6">
             <img
               src={refineryWide}
               alt="Refinery complex with storage tanks"
@@ -177,12 +177,12 @@ function About() {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-navy-deep p-7">
+            <div className="rounded-lg bg-navy-deep p-7">
               <p className="font-display text-3xl font-bold text-primary">100%</p>
               <h3 className="mt-2 text-base">Inspected Cargoes</h3>
               <p className="mt-2 text-sm opacity-70">SGS or equivalent at load port.</p>
             </div>
-            <div className="bg-navy-deep p-7">
+            <div className="rounded-lg bg-navy-deep p-7">
               <p className="font-display text-3xl font-bold text-primary">94%</p>
               <h3 className="mt-2 text-base">Contract Fulfilment</h3>
               <p className="mt-2 text-sm opacity-70">Volumes delivered inside the window.</p>

@@ -101,8 +101,8 @@ function ServiceDetail() {
                   <div key={m.label}>
                     <p className="font-display text-3xl font-bold text-primary">{m.value}%</p>
                     <h3 className="mt-2 text-sm">{m.label}</h3>
-                    <div className="mt-2 h-1.5 w-full bg-border">
-                      <div className="h-full bg-primary" style={{ width: `${m.value}%` }} />
+                    <div className="mt-2 h-1.5 w-full rounded-full bg-border">
+                      <div className="h-full rounded-full bg-primary" style={{ width: `${m.value}%` }} />
                     </div>
                   </div>
                 ))}
@@ -131,7 +131,7 @@ function ServiceDetail() {
                 key={s.slug}
                 to="/services/$slug"
                 params={{ slug: s.slug }}
-                className="group bg-surface p-7 transition-colors hover:bg-navy hover:text-navy-foreground"
+                className="group rounded-lg bg-surface p-7 transition-colors hover:bg-navy hover:text-navy-foreground"
               >
                 <h3 className="text-lg">{s.name}</h3>
                 <p className="mt-2 text-sm opacity-75">{s.short}</p>
