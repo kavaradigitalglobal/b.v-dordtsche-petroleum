@@ -56,7 +56,7 @@ function Services() {
                 key={s.slug}
                 to="/services/$slug"
                 params={{ slug: s.slug }}
-                className={`group p-7 transition-colors ${tone(i)}`}
+                className={`group rounded-lg p-7 transition-colors ${tone(i)}`}
               >
                 <Droplets className="size-8 text-primary group-hover:text-current" aria-hidden />
                 <h3 className="mt-5 text-lg">{s.name}</h3>
