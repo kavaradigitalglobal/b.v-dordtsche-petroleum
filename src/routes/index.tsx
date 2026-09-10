@@ -330,7 +330,7 @@ function Home() {
               height={800}
               className="w-full object-cover"
             />
-            <div className="bg-primary p-7 text-primary-foreground">
+            <div className="rounded-lg bg-primary p-7 text-primary-foreground">
               <p className="font-display text-lg font-bold uppercase leading-snug">
                 Let&apos;s talk about the cargo you need moved
               </p>
@@ -346,7 +346,7 @@ function Home() {
               {steps.map((step, i) => (
                 <div key={step.title} className="flex gap-5">
                   <span
-                    className={`flex size-12 shrink-0 items-center justify-center ${
+                    className={`flex size-12 shrink-0 items-center justify-center rounded-lg ${
                       i % 2 === 0 ? "bg-navy text-navy-foreground" : "bg-primary text-primary-foreground"
                     }`}
                   >
