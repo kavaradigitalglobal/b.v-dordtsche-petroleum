@@ -165,7 +165,7 @@ function Home() {
             </Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="bg-surface p-7">
+            <div className="rounded-lg bg-surface p-7">
               <Droplets className="size-8 text-primary" aria-hidden />
               <h3 className="mt-5 text-lg">Product Expertise</h3>
               <p className="mt-2 text-sm text-muted-foreground">
@@ -175,7 +175,7 @@ function Home() {
                 Learn More <ArrowRight className="size-4" aria-hidden />
               </Link>
             </div>
-            <div className="row-span-2 overflow-hidden">
+            <div className="row-span-2 overflow-hidden rounded-lg">
               <img
                 src={refineryTower}
                 alt="Refinery distillation tower"
@@ -185,7 +185,7 @@ function Home() {
                 className="size-full object-cover"
               />
             </div>
-            <div className="bg-navy p-7 text-navy-foreground">
+            <div className="rounded-lg bg-navy p-7 text-navy-foreground">
               <Factory className="size-8 text-primary" aria-hidden />
               <h3 className="mt-5 text-lg">Inspection Discipline</h3>
               <p className="mt-2 text-sm opacity-75">
