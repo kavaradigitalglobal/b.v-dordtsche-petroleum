@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-surface pt-16">
       <div className="mx-auto max-w-7xl px-5">
-        <div className="bg-navy px-6 py-12 text-navy-foreground sm:px-10 lg:px-14">
+        <div className="rounded-lg bg-navy px-6 py-12 text-navy-foreground sm:px-10 lg:px-14">
           <div className="grid gap-10 lg:grid-cols-4">
             <div>
               <div className="flex items-center gap-3">
