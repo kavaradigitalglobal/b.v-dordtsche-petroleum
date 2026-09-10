@@ -4,10 +4,10 @@ import { useState } from "react";
 import { company, services } from "@/lib/site-data";
 
 const nav = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
+  { to: "/", label: "Home", hasDropdown: false },
+  { to: "/about", label: "About", hasDropdown: false },
   { to: "/services", label: "Services", hasDropdown: true },
-  { to: "/contact", label: "Contact" },
+  { to: "/contact", label: "Contact", hasDropdown: false },
 ] as const;
 
 export function Header() {
