@@ -95,7 +95,7 @@ function Home() {
       </section>
 
       {/* Two overlapping cards */}
-      <section className="mx-auto -mt-16 max-w-7xl px-5">
+      <section className="relative z-10 mx-auto -mt-16 max-w-7xl px-5">
         <div className="grid gap-0 lg:grid-cols-[1.4fr_1fr]">
           <div className="bg-background p-8 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.35)] sm:p-10">
             <h2 className="text-xl rule-accent">How can we help you?</h2>
@@ -208,11 +208,12 @@ function Home() {
           loading="lazy"
           width={1920}
           height={900}
-          className="h-[38rem] w-full object-cover"
+          className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-navy-deep/80" />
-        <div className="absolute inset-0 overflow-y-auto">
+        <div className="relative">
           <div className="mx-auto max-w-7xl px-5 py-16 text-navy-foreground">
+
             <div className="text-center">
               <p className="kicker">Why choose us</p>
               <h2 className="mt-3 text-3xl">Experience trading with global markets</h2>
