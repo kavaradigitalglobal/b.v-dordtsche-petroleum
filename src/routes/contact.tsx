@@ -3,23 +3,27 @@ import { Building2, Clock, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 import pipes from "@/assets/pipes.jpg";
 import { PageHero } from "@/components/site/PageHero";
-import { company, services } from "@/lib/site-data";
+import { OG_IMAGE, company, services } from "@/lib/site-data";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Dordtsche Petroleum Maatschappij" },
+      { title: "Contact Our Trading Desk | Request a Soft Corporate Offer" },
       {
         name: "description",
         content:
-          "Contact our trading desk in The Hague at Carel Van Bylandtlaan 30 to request a soft corporate offer for refined petroleum products.",
+          "Contact Dordtsche Petroleum Maatschappij at Carel Van Bylandtlaan 30, The Hague. Send product, volume and destination port for a soft corporate offer.",
       },
-      { property: "og:title", content: "Contact — Dordtsche Petroleum Maatschappij" },
+      { property: "og:title", content: "Contact Our Trading Desk | Request a Soft Corporate Offer" },
       {
         property: "og:description",
-        content: "Send your product, volume and destination port to receive a soft corporate offer.",
+        content:
+          "Send your product, volume and destination port to our desk in The Hague to receive a soft corporate offer.",
       },
       { property: "og:url", content: "/contact" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: OG_IMAGE },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
   }),

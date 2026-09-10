@@ -47,17 +47,13 @@ export function Header() {
       <div className="border-b border-border bg-background">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4">
           <Link to="/" className="flex items-center gap-3">
-            <span className="flex size-11 items-center justify-center bg-primary">
-              <span className="block size-4 rounded-full border-[3px] border-primary-foreground" />
-            </span>
-            <span className="leading-tight">
-              <span className="block font-display text-lg font-bold uppercase tracking-wide">
-                Dordtsche
-              </span>
-              <span className="block font-display text-[0.6rem] uppercase tracking-[0.22em] text-muted-foreground">
-                Petroleum Maatschappij
-              </span>
-            </span>
+            <img
+              src="/logo.png"
+              alt="B.V Dordtsche Petroleum Maatschappij logo"
+              width={220}
+              height={124}
+              className="h-12 w-auto sm:h-14"
+            />
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">

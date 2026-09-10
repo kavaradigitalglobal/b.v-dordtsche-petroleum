@@ -5,24 +5,27 @@ import refineryTower from "@/assets/refinery-tower.jpg";
 import refineryWide from "@/assets/refinery-wide.jpg";
 import tankers from "@/assets/tankers.jpg";
 import { AnimatedProgress, AnimatedStat } from "@/components/site/AnimatedStat";
-import { company, services, stats } from "@/lib/site-data";
+import { OG_IMAGE, company, services, stats } from "@/lib/site-data";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dordtsche Petroleum Maatschappij — Refined Product Supply" },
+      { title: "Refined Petroleum Supply on FOB Terms | DPM The Hague" },
       {
         name: "description",
         content:
-          "B.V Dordtsche Petroleum Maatschappij supplies D2 gas oil, ULSD, biodiesel, RFO, AVGAS, jet fuel and MDO on FOB terms, inspected by SGS or equivalent.",
+          "B.V Dordtsche Petroleum Maatschappij supplies D2 gas oil, ULSD 10/15 PPM, biodiesel B100, RFO, AVGAS, JET A-1 and MDO on FOB terms, SGS inspected.",
       },
-      { property: "og:title", content: "Dordtsche Petroleum Maatschappij — Refined Product Supply" },
+      { property: "og:title", content: "Refined Petroleum Supply on FOB Terms | DPM The Hague" },
       {
         property: "og:description",
         content:
-          "Contract volumes and immediate trial shipments of refined petroleum products, supplied from The Hague on FOB terms.",
+          "Contract volumes and immediate trial shipments of refined petroleum products, supplied from The Hague on FOB terms and SGS inspected.",
       },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: OG_IMAGE },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),

@@ -10,15 +10,14 @@ export function Footer() {
           <div className="grid gap-10 lg:grid-cols-4">
             <div>
               <div className="flex items-center gap-3">
-                <span className="flex size-11 items-center justify-center bg-primary">
-                  <span className="block size-4 rounded-full border-[3px] border-primary-foreground" />
-                </span>
-                <span className="leading-tight">
-                  <span className="block font-display text-lg font-bold uppercase">Dordtsche</span>
-                  <span className="block font-display text-[0.6rem] uppercase tracking-[0.2em] opacity-70">
-                    Petroleum Maatschappij
-                  </span>
-                </span>
+                <img
+                  src="/logo.png"
+                  alt="B.V Dordtsche Petroleum Maatschappij logo"
+                  width={220}
+                  height={124}
+                  loading="lazy"
+                  className="h-14 w-auto rounded-md bg-white/95 p-2"
+                />
               </div>
               <h4 className="mt-8 text-sm tracking-widest">Office</h4>
               <p className="mt-2 max-w-xs text-sm opacity-70">{company.address}</p>
