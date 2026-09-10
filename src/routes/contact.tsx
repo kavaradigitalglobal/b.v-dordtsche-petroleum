@@ -95,7 +95,7 @@ function Contact() {
             <p className="kicker">Let&apos;s talk</p>
             <h3 className="mt-3 text-2xl">Leave a message</h3>
             {sent ? (
-              <div className="mt-8 bg-surface p-6">
+              <div className="mt-8 rounded-lg bg-surface p-6">
                 <h4 className="text-base">Thank you</h4>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Your details are ready to send. Please email {company.email} with the same
