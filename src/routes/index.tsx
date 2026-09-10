@@ -223,7 +223,7 @@ function Home() {
               </p>
             </div>
             <div className="mt-10 grid gap-0 lg:grid-cols-[1fr_1.6fr]">
-              <div className="bg-navy p-8">
+              <div className="rounded-lg bg-navy p-8">
                 <h3 className="text-lg">Always ready to serve</h3>
                 <p className="mt-3 text-sm opacity-75">
                   Our desk operates on Central European hours and answers enquiries in writing.
@@ -237,7 +237,7 @@ function Home() {
                   <li>{company.email}</li>
                 </ul>
               </div>
-              <div className="bg-background p-8 text-foreground">
+              <div className="rounded-lg bg-background p-8 text-foreground">
                 <h3 className="text-lg">This is our expertise</h3>
                 <div className="mt-6 space-y-5">
                   {expertise.map((item) => (
