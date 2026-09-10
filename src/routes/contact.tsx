@@ -44,18 +44,18 @@ function Contact() {
         </div>
 
         <div className="mt-12 grid gap-0 md:grid-cols-3">
-          <div className="bg-surface p-8">
+          <div className="rounded-lg bg-surface p-8">
             <MapPin className="size-7 text-primary" aria-hidden />
             <h3 className="mt-5 text-lg">Our Office</h3>
             <p className="mt-2 text-sm text-muted-foreground">{company.address}</p>
           </div>
-          <div className="bg-navy p-8 text-navy-foreground">
+          <div className="rounded-lg bg-navy p-8 text-navy-foreground">
             <Building2 className="size-7 text-primary" aria-hidden />
             <h3 className="mt-5 text-lg">Registration</h3>
             <p className="mt-2 text-sm opacity-75">KvK {company.kvk}</p>
             <p className="mt-1 text-sm opacity-75">{company.name}</p>
           </div>
-          <div className="bg-primary p-8 text-primary-foreground">
+          <div className="rounded-lg bg-primary p-8 text-primary-foreground">
             <Mail className="size-7" aria-hidden />
             <h3 className="mt-5 text-lg">Our Email</h3>
             <a href={`mailto:${company.email}`} className="mt-2 block text-sm underline">
@@ -65,7 +65,7 @@ function Contact() {
         </div>
 
         <div className="mt-8 grid gap-8 lg:grid-cols-2">
-          <div className="bg-surface p-8">
+          <div className="rounded-lg bg-surface p-8">
             <h3 className="text-lg rule-accent">Trading Desk</h3>
             <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
               <li className="flex gap-3">
@@ -91,7 +91,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="border border-border p-8">
+          <div className="rounded-lg border border-border p-8">
             <p className="kicker">Let&apos;s talk</p>
             <h3 className="mt-3 text-2xl">Leave a message</h3>
             {sent ? (
