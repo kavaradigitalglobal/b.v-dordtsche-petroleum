@@ -123,7 +123,7 @@ function Contact() {
                   <select
                     name="product"
                     required
-                    className="mt-2 w-full border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
+                    className="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
                   >
                     {services.map((s) => (
                       <option key={s.slug} value={s.name}>
@@ -141,7 +141,7 @@ function Contact() {
                     rows={4}
                     required
                     placeholder="Volume, delivery basis and timing"
-                    className="mt-2 w-full border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
+                    className="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
                   />
                 </label>
                 <button type="submit" className="btn-base btn-primary w-full">
@@ -175,7 +175,7 @@ function Field({
         type={type}
         required
         placeholder={placeholder}
-        className="mt-2 w-full border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
+        className="mt-2 w-full rounded-md border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary"
       />
     </label>
   );
