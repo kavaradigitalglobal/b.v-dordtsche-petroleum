@@ -92,10 +92,11 @@ function Services() {
           loading="lazy"
           width={1920}
           height={900}
-          className="h-[30rem] w-full object-cover"
+          className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-navy-deep/85" />
-        <div className="absolute inset-0 overflow-y-auto">
+        <div className="relative">
+
           <div className="mx-auto max-w-3xl px-5 py-20 text-center text-navy-foreground">
             <p className="kicker">Why choose us</p>
             <h2 className="mt-3 text-3xl">Supply that clears inspection</h2>
