@@ -138,9 +138,9 @@ export function Header() {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setOpen((v) => !v)}
-            className="flex size-10 items-center justify-center bg-navy text-navy-foreground lg:hidden"
+            className="flex size-11 items-center justify-center rounded-xl bg-navy text-navy-foreground transition-colors hover:bg-primary hover:text-primary-foreground lg:hidden"
           >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+            <Menu className="size-5" />
           </button>
         </div>
 
