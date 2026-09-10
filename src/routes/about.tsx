@@ -9,6 +9,7 @@ import engineer from "@/assets/engineer.jpg";
 import pipes from "@/assets/pipes.jpg";
 import refineryTower from "@/assets/refinery-tower.jpg";
 import refineryWide from "@/assets/refinery-wide.jpg";
+import { AnimatedStat } from "@/components/site/AnimatedStat";
 import { PageHero } from "@/components/site/PageHero";
 import { company, stats } from "@/lib/site-data";
 
@@ -111,7 +112,9 @@ function About() {
               className="h-full w-full object-cover"
             />
             <div className="flex flex-col justify-center rounded-lg bg-primary p-7 text-primary-foreground">
-              <p className="font-display text-4xl font-bold">98%</p>
+              <p className="font-display text-4xl font-bold">
+                <AnimatedStat value={98} suffix="%" />
+              </p>
               <p className="mt-2 text-sm">
                 of shipments cleared inspection on the first sampling round.
               </p>
@@ -125,8 +128,7 @@ function About() {
           {stats.map((s) => (
             <div key={s.label} className="text-center lg:border-r lg:border-border lg:last:border-0">
               <p className="font-display text-4xl font-bold">
-                {s.value}
-                <span className="text-primary">+</span>
+                <AnimatedStat value={s.value} suffix="+" suffixClassName="text-primary" />
               </p>
               <p className="mt-1 text-sm text-muted-foreground">{s.label}</p>
             </div>
@@ -178,12 +180,16 @@ function About() {
           </div>
           <div className="grid grid-cols-2 gap-6">
             <div className="rounded-lg bg-navy-deep p-7">
-              <p className="font-display text-3xl font-bold text-primary">100%</p>
+              <p className="font-display text-3xl font-bold text-primary">
+                <AnimatedStat value={100} suffix="%" />
+              </p>
               <h3 className="mt-2 text-base">Inspected Cargoes</h3>
               <p className="mt-2 text-sm opacity-70">SGS or equivalent at load port.</p>
             </div>
             <div className="rounded-lg bg-navy-deep p-7">
-              <p className="font-display text-3xl font-bold text-primary">94%</p>
+              <p className="font-display text-3xl font-bold text-primary">
+                <AnimatedStat value={94} suffix="%" />
+              </p>
               <h3 className="mt-2 text-base">Contract Fulfilment</h3>
               <p className="mt-2 text-sm opacity-70">Volumes delivered inside the window.</p>
             </div>

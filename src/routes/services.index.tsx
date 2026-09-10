@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Droplets } from "lucide-react";
 import pipes from "@/assets/pipes.jpg";
 import refineryWide from "@/assets/refinery-wide.jpg";
+import { AnimatedStat } from "@/components/site/AnimatedStat";
 import { PageHero } from "@/components/site/PageHero";
 import { company, services, stats } from "@/lib/site-data";
 
@@ -75,8 +76,7 @@ function Services() {
           {stats.map((s) => (
             <div key={s.label} className="text-center lg:border-r lg:border-border lg:last:border-0">
               <p className="font-display text-4xl font-bold">
-                {s.value}
-                <span className="text-primary">+</span>
+                <AnimatedStat value={s.value} suffix="+" suffixClassName="text-primary" />
               </p>
               <p className="mt-1 text-sm text-muted-foreground">{s.label}</p>
             </div>

@@ -4,6 +4,7 @@ import engineer from "@/assets/engineer.jpg";
 import pipes from "@/assets/pipes.jpg";
 import refineryTower from "@/assets/refinery-tower.jpg";
 import tankers from "@/assets/tankers.jpg";
+import { AnimatedProgress, AnimatedStat } from "@/components/site/AnimatedStat";
 import { PageHero } from "@/components/site/PageHero";
 import { services } from "@/lib/site-data";
 
@@ -50,7 +51,7 @@ function ServiceDetail() {
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">{service.summary}</p>
             <dl className="mt-8 divide-y divide-border">
               {service.specs.map((spec, i) => {
-                const Icon = specIcons[i % specIcons.length]!;
+                const Icon = specIcons[i % specIcons.length] ?? Users;
                 return (
                   <div key={spec.label} className="flex items-center justify-between gap-4 py-3">
                     <dt className="flex items-center gap-2 font-display text-xs font-semibold uppercase tracking-[0.12em]">
@@ -99,10 +100,15 @@ function ServiceDetail() {
               <div className="grid grid-cols-2 gap-6 pt-4">
                 {service.metrics.map((m) => (
                   <div key={m.label}>
-                    <p className="font-display text-3xl font-bold text-primary">{m.value}%</p>
+                    <p className="font-display text-3xl font-bold text-primary">
+                      <AnimatedStat value={m.value} suffix="%" />
+                    </p>
                     <h3 className="mt-2 text-sm">{m.label}</h3>
                     <div className="mt-2 h-1.5 w-full rounded-full bg-border">
-                      <div className="h-full rounded-full bg-primary" style={{ width: `${m.value}%` }} />
+                      <AnimatedProgress
+                        value={m.value}
+                        className="h-full rounded-full bg-primary transition-[width] duration-1000 ease-out"
+                      />
                     </div>
                   </div>
                 ))}
