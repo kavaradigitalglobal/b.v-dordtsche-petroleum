@@ -3,7 +3,7 @@ import { Building2, Clock, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 import pipes from "@/assets/pipes.jpg";
 import { PageHero } from "@/components/site/PageHero";
-import { company, services } from "@/lib/site-data";
+import { OG_IMAGE, company, services } from "@/lib/site-data";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({

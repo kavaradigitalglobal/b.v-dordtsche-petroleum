@@ -4,7 +4,7 @@ import pipes from "@/assets/pipes.jpg";
 import refineryWide from "@/assets/refinery-wide.jpg";
 import { AnimatedStat } from "@/components/site/AnimatedStat";
 import { PageHero } from "@/components/site/PageHero";
-import { company, services, stats } from "@/lib/site-data";
+import { OG_IMAGE, company, services, stats } from "@/lib/site-data";
 
 export const Route = createFileRoute("/services/")({
   head: () => ({

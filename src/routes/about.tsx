@@ -11,7 +11,7 @@ import refineryTower from "@/assets/refinery-tower.jpg";
 import refineryWide from "@/assets/refinery-wide.jpg";
 import { AnimatedStat } from "@/components/site/AnimatedStat";
 import { PageHero } from "@/components/site/PageHero";
-import { company, stats } from "@/lib/site-data";
+import { OG_IMAGE, company, stats } from "@/lib/site-data";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

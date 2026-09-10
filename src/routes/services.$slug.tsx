@@ -6,7 +6,7 @@ import refineryTower from "@/assets/refinery-tower.jpg";
 import tankers from "@/assets/tankers.jpg";
 import { AnimatedProgress, AnimatedStat } from "@/components/site/AnimatedStat";
 import { PageHero } from "@/components/site/PageHero";
-import { services } from "@/lib/site-data";
+import { OG_IMAGE, services } from "@/lib/site-data";
 
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
