@@ -21,12 +21,14 @@ export const Route = createFileRoute("/services/$slug")({
     const { service } = loaderData;
     return {
       meta: [
-        { title: `${service.name} — Dordtsche Petroleum` },
+        { title: `${service.name} | FOB Supply — Dordtsche Petroleum` },
         { name: "description", content: service.summary },
-        { property: "og:title", content: `${service.name} — Dordtsche Petroleum` },
+        { property: "og:title", content: `${service.name} | FOB Supply — Dordtsche Petroleum` },
         { property: "og:description", content: service.summary },
         { property: "og:type", content: "product" },
         { property: "og:url", content: `/services/${params.slug}` },
+        { property: "og:image", content: OG_IMAGE },
+        { name: "twitter:image", content: OG_IMAGE },
       ],
       links: [{ rel: "canonical", href: `/services/${params.slug}` }],
     };

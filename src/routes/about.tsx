@@ -16,19 +16,22 @@ import { company, stats } from "@/lib/site-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Dordtsche Petroleum Maatschappij" },
+      { title: "About Us | Dordtsche Petroleum Maatschappij, The Hague" },
       {
         name: "description",
         content:
-          "Who we are: a petroleum supply house in The Hague trading refined products on FOB terms, KvK 27002689.",
+          "A Dutch petroleum supply house in The Hague (KvK 27002689) trading seven refined grades on contract terms and immediate trial shipments, FOB worldwide.",
       },
-      { property: "og:title", content: "About — Dordtsche Petroleum Maatschappij" },
+      { property: "og:title", content: "About Us | Dordtsche Petroleum Maatschappij, The Hague" },
       {
         property: "og:description",
         content:
-          "A Dutch petroleum supply house trading seven refined grades on contract and trial shipment.",
+          "Who we are: a Dutch petroleum supply house trading seven refined grades on contract and trial shipment, inspected by SGS or equivalent.",
       },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: OG_IMAGE },
+      { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
