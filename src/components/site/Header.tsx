@@ -56,29 +56,20 @@ export function Header() {
                   onMouseEnter={() => setServicesOpen(true)}
                   onMouseLeave={() => setServicesOpen(false)}
                 >
-                  <div className="flex items-center">
-                    <Link
-                      to={item.to}
-                      activeOptions={{ exact: false }}
-                      activeProps={{ className: "text-primary" }}
-                      className="font-display text-sm font-semibold uppercase tracking-[0.14em] transition-colors hover:text-primary"
-                    >
-                      {item.label}
-                    </Link>
-                    <button
-                      type="button"
-                      aria-label="Toggle services menu"
-                      aria-expanded={servicesOpen}
-                      aria-haspopup="true"
-                      onClick={() => setServicesOpen((v) => !v)}
-                      className="ml-1 p-1 text-muted-foreground transition-colors hover:text-primary"
-                    >
-                      <ChevronDown
-                        className={`size-4 transition-transform ${servicesOpen ? "rotate-180" : ""}`}
-                        aria-hidden
-                      />
-                    </button>
-                  </div>
+                  <button
+                    type="button"
+                    aria-label="Toggle services menu"
+                    aria-expanded={servicesOpen}
+                    aria-haspopup="true"
+                    onClick={() => setServicesOpen((v) => !v)}
+                    className="flex items-center gap-1 font-display text-sm font-semibold uppercase tracking-[0.14em] transition-colors hover:text-primary"
+                  >
+                    {item.label}
+                    <ChevronDown
+                      className={`size-4 transition-transform ${servicesOpen ? "rotate-180" : ""}`}
+                      aria-hidden
+                    />
+                  </button>
 
                   {servicesOpen && (
                     <div className="absolute left-0 top-full z-50 mt-1 w-64 border border-border bg-background shadow-lg">
