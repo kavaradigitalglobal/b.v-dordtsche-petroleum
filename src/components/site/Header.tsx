@@ -59,7 +59,7 @@ export function Header() {
                   <div className="flex items-center">
                     <Link
                       to={item.to}
-                      activeOptions={{ exact: item.to === "/" }}
+                      activeOptions={{ exact: false }}
                       activeProps={{ className: "text-primary" }}
                       className="font-display text-sm font-semibold uppercase tracking-[0.14em] transition-colors hover:text-primary"
                     >
@@ -154,7 +154,7 @@ export function Header() {
                         setOpen(false);
                         setMobileServicesOpen(false);
                       }}
-                      activeOptions={{ exact: item.to === "/" }}
+                      activeOptions={{ exact: false }}
                       activeProps={{ className: "text-primary" }}
                       className="font-display text-sm font-semibold uppercase tracking-[0.14em]"
                     >
