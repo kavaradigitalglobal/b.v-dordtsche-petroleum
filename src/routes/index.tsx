@@ -294,7 +294,7 @@ function Home() {
             ))}
             <Link
               to="/services"
-              className="flex flex-col justify-end bg-navy-deep p-7 text-navy-foreground"
+              className="flex flex-col justify-end rounded-lg bg-navy-deep p-7 text-navy-foreground"
             >
               <h3 className="text-lg">Explore all products</h3>
               <span className="btn-base btn-primary mt-5">All Products</span>
