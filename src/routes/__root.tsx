@@ -103,6 +103,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: company.name,
           email: company.email,
+          logo: "https://project--3ef5d425-ed0b-4b9d-88ab-c9427439a79f.lovable.app/logo.png",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Carel Van Bylandtlaan 30",
