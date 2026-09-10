@@ -15,6 +15,19 @@ export function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
+  const closeAll = () => {
+    setOpen(false);
+    setMobileServicesOpen(false);
+  };
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+
   return (
     <header>
       <div className="bg-navy text-navy-foreground">
