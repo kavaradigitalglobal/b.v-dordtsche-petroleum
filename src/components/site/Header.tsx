@@ -108,9 +108,6 @@ export function Header() {
           </nav>
         )}
       </div>
-      <span className="hidden">
-        <X />
-      </span>
     </header>
   );
 }
