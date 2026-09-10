@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ChevronDown, Facebook, Linkedin, Mail, Menu, Phone, Twitter, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { company, services } from "@/lib/site-data";
 
 const nav = [
