@@ -276,7 +276,7 @@ function Home() {
                 key={s.slug}
                 to="/services/$slug"
                 params={{ slug: s.slug }}
-                className={`group p-7 transition-colors ${
+                className={`group rounded-lg p-7 transition-colors ${
                   i === 0 || i === 3
                     ? "bg-navy text-navy-foreground hover:bg-primary"
                     : i === 2
