@@ -97,7 +97,7 @@ function Home() {
       {/* Two overlapping cards */}
       <section className="relative z-10 mx-auto -mt-16 max-w-7xl px-5">
         <div className="grid gap-0 lg:grid-cols-[1.4fr_1fr]">
-          <div className="bg-background p-8 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.35)] sm:p-10">
+          <div className="rounded-lg bg-background p-8 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.35)] sm:p-10">
             <h2 className="text-xl rule-accent">How can we help you?</h2>
             <div className="mt-6 grid gap-x-8 gap-y-3 sm:grid-cols-2">
               {[
@@ -118,7 +118,7 @@ function Home() {
               Explore Products <ArrowRight className="size-4" aria-hidden />
             </Link>
           </div>
-          <div className="bg-navy p-8 text-navy-foreground sm:p-10">
+          <div className="rounded-lg bg-navy p-8 text-navy-foreground sm:p-10">
             <h2 className="text-xl">Request for a quote</h2>
             <p className="mt-4 text-sm opacity-75">
               Send the product, volume and destination port. Our desk responds with a soft corporate
