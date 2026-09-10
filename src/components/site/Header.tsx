@@ -80,9 +80,10 @@ export function Header() {
             onClick={() => setOpen((v) => !v)}
             className="flex size-10 items-center justify-center bg-navy text-navy-foreground lg:hidden"
           >
-            {open ? <Menu className="size-5" /> : <Menu className="size-5" />}
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
         </div>
+
 
         {open && (
           <nav className="border-t border-border lg:hidden">
