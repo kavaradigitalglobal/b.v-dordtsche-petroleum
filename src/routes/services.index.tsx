@@ -5,7 +5,7 @@ import refineryWide from "@/assets/refinery-wide.jpg";
 import { PageHero } from "@/components/site/PageHero";
 import { company, services, stats } from "@/lib/site-data";
 
-export const Route = createFileRoute("/services")({
+export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
       { title: "Refined Products & Services — Dordtsche Petroleum" },
