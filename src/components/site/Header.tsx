@@ -53,8 +53,6 @@ export function Header() {
                 <div
                   key={item.to}
                   className="relative"
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
                 >
                   <button
                     type="button"
